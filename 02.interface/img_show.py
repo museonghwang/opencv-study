@@ -1,4 +1,3 @@
-
 import cv2
 
 img_file = "./img/wonyoung.jpg" # 표시할 이미지 경로            ---①
