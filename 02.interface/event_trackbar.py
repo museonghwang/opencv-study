@@ -9,7 +9,6 @@ cv2.imshow(win_name,img)                # 초기 이미지를 창에 표시
 # 트랙바 이벤트 처리 함수 선언 ---①
 def onChange(x):                                        
     print(x)                            # 트랙바 새로운 위치 값 ---②
-    
     # 'R', 'G', 'B' 각 트랙바 위치 값 ---③
     r = cv2.getTrackbarPos('R',win_name)               
     g = cv2.getTrackbarPos('G',win_name)               
@@ -24,7 +23,7 @@ cv2.createTrackbar('G', win_name, 255, 255, onChange)
 cv2.createTrackbar('B', win_name, 255, 255, onChange)
 
 while True:
-    if cv2.waitKey(0) & 0xFF == 27:
+    if cv2.waitKey(100) & 0xFF == 27:
         break
 
 cv2.destroyAllWindows()
