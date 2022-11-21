@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 
 img1 = cv2.imread('./img/wonyoung.jpg')
-img2 = cv2.imread('./img/wonyoung2.jpg')
+img2 = cv2.imread('./img/wonyoung2.png')
 img3 = cv2.imread('./img/wonyoung3.jpg')
 
 
