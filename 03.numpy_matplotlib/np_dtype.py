@@ -1,13 +1,13 @@
 import numpy as np
 
-a = np.arange(10)
+a = np.arange(5)
 print(a, a.dtype)
 
 b = a.astype('float32')
 print(b, b.dtype)
 
-c = np.uint8(b) 
+c = a.astype(np.float64)
 print(c, c.dtype)
 
-d = c.astype(np.float64)
+d = np.uint8(a)
 print(d, d.dtype)
